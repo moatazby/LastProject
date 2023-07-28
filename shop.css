@@ -1,0 +1,474 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fadac2;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #eb7329;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #eb7329;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@200&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 216.5vh;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
+    position: sticky;
+    top: 0px;
+    z-index: 10000;
+}
+
+.logo {
+    cursor: pointer;
+    height: 80px;
+    width: 200px;
+}
+
+a {
+    color: #000000;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: rgb(21, 21, 21);
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: transform .4s;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: rgb(255, 108, 39);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:active::after {
+    background: rgb(254, 155, 79);
+    transform: scale(0.9);
+}
+
+.btn {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: .4s;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+/* ----------myshop---------- */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.home_Bellipse__Uwlao,
+.home_bg__nU5tT {
+    width: 1100px;
+    height: 245px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    color: #000000;
+    font-size: 60px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    transition: 0.5s;
+    -webkit-text-stroke: 1.1px rgb(0, 0, 0);
+    color: transparent;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.eyewear {
+    font-size: 1em;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.eyewear:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #f47703,
+        0 0 25px #f47703,
+        0 0 50px #f47703,
+        0 0 100px #f47703;
+}
+
+.back-button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: rgb(243, 243, 243);
+    color: rgb(0, 0, 0);
+    transition: .4s;
+}
+
+.back-button:active {
+    transform: scale(0.9);
+}
+
+.summer-sale {
+    height: 560px;
+    width: 1800px;
+}
+
+.container2 {
+    position: relative;
+    margin-left: 40%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 600px;
+    margin-top: 30%;
+    background-color: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+}
+
+.see-more {
+    border-radius: 20px;
+    background-color: #000000;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+
+#slide {
+    width: max-content;
+    margin-top: 50px;
+}
+
+.item {
+    width: 200px;
+    height: 300px;
+    background-position: 7% 50%;
+    display: inline-block;
+    transition: 0.5s;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+}
+
+.item:nth-child(1),
+.item:nth-child(2) {
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+}
+
+.item:nth-child(3) {
+    left: 50%;
+}
+
+.item:nth-child(4) {
+    left: calc(50% + 220px);
+}
+
+.item:nth-child(5) {
+    left: calc(50% + 440px);
+}
+
+.item:nth-child(n+6) {
+    left: calc(50% + 660px);
+    opacity: 0;
+}
+
+.item .content {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 300px;
+    text-align: center;
+    padding: 0;
+    color: #080808;
+    transform: translate(0, -50%);
+    display: none;
+    font-family: system-ui;
+}
+
+.item:nth-child(2) .content {
+    display: block;
+    z-index: 11111;
+}
+
+.item .name {
+    padding-bottom: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 1 forwards
+}
+
+.item .des {
+    margin: -20px 0px 300px;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.3s 1 forwards;
+    padding-bottom: 100px;
+}
+
+.item button {
+    padding: 15px 20px;
+    border: none;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+}
+
+@keyframes showcontent {
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+        filter: blur(0);
+    }
+}
+
+.buttons {
+    position: absolute;
+    bottom: 30px;
+    z-index: 222222;
+    text-align: center;
+    width: 100%;
+}
+
+.buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #555;
+    transition: 0.5s;
+}
+
+.buttons button:hover {
+    background-color: #e68e42;
+}
+
+#cart-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* cart */
+
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.shop {
+    margin-top: -10rem;
+    padding-bottom: 100px;
+}
+
+/* shop content */
+.shop-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-box {
+    position: relative;
+    cursor: pointer;
+}
+
+.product-box:hover {
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    transition: 0.4s;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.product-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.shopping-bag {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.shopping-bag:hover {
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    transition: 0.4s;
+}
+
+@media (min-width: 768px) {
+    footer:not(.nav__footer) {
+        border-top: 1px solid #0b0b0b;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+footer:not(.nav__footer) {
+    height: 40px;
+    width: 100%;
+    border-top: #151515;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.font--condensed,
+.header__nav-item {
+    font-family: "proxima-nova-condensed", "Helvetica", arial, sans-serif;
+}
+
+.text--sm,
+.header__nav-item {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .footer__policy {
+        margin-bottom: 0;
+        text-align: left;
+        justify-content: flex-start;
+    }
+}
+
+.footer__policy {
+    margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+
+    .footer__legend,
+    .footer__policy,
+    .footer__copyright {
+        width: 33%;
+    }
+}
+
+a.link--text {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+
+a.link--text:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.text--dimmed {
+    color: rgb(0, 0, 0);
+}
+
+.logo-footer {
+    height: 50px;
+    width: 50px;
+}
